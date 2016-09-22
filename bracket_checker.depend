@@ -1,0 +1,16 @@
+# depslib dependency file v1.0
+1474496018 source:/home/nemanja/Projects/bracket_checker/src/data_structures/stack.cpp
+	<iostream>
+	"stack.h"
+
+1474494965 /home/nemanja/Projects/bracket_checker/src/data_structures/stack.h
+
+1474498777 source:/home/nemanja/Projects/bracket_checker/src/main.cpp
+	<iostream>
+	<string>
+	"data_structures/stack.cpp"
+
+1474496018 /home/nemanja/Projects/bracket_checker/src/data_structures/stack.cpp
+	<iostream>
+	"stack.h"
+
