@@ -5,7 +5,7 @@
 
 1474494965 /home/nemanja/Projects/bracket_checker/src/data_structures/stack.h
 
-1474498777 source:/home/nemanja/Projects/bracket_checker/src/main.cpp
+1474804160 source:/home/nemanja/Projects/bracket_checker/src/main.cpp
 	<iostream>
 	<string>
 	"data_structures/stack.cpp"

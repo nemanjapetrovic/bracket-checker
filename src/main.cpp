@@ -7,7 +7,7 @@ using namespace std;
 //Importing data from the user
 string importData();
 //Expression validation
-bool expressionIsValid(string data,Stack<char> &stackData, int n);
+bool expressionIsValid(string data,Stack<char> &stackData);
 
 int main()
 {
@@ -20,7 +20,7 @@ int main()
 
     //Expression validation
     bool ret;
-    ret = expressionIsValid(data,stackData,n);
+    ret = expressionIsValid(data,stackData);
     cout<<ret<<endl;
 
     return 0;
@@ -34,9 +34,9 @@ string importData()
     return data;
 };
 
-bool expressionIsValid(string data, Stack<char> &stackData,int n)
+bool expressionIsValid(string data, Stack<char> &stackData)
 {
-    for(int i = 0 ; i < n ; i++)
+    for(int i = 0 ; i < data.length() ; i++)
     {
         if(data[i] == '{' || data[i] == '(' || data[i] == '[')
         {
@@ -48,8 +48,6 @@ bool expressionIsValid(string data, Stack<char> &stackData,int n)
             {
                 return false;//Stack is empty, no opened brackets
             }
-            char a = stackData.getTop();
-            char b = data[i];
             if(stackData.getTop() == '(' && data[i] == ')')
             {
                 stackData.pop();
