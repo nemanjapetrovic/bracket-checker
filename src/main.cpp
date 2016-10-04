@@ -21,7 +21,7 @@ int main()
     //Expression validation
     bool ret;
     ret = expressionIsValid(data,stackData);
-    cout<<ret<<endl;
+    cout<<"\n\nValid = 1|Not valid = 0\n\nResult: "<<ret<<endl;
 
     return 0;
 }
@@ -41,29 +41,35 @@ bool expressionIsValid(string data, Stack<char> &stackData)
         if(data[i] == '{' || data[i] == '(' || data[i] == '[')
         {
             stackData.push(data[i]);
+            continue;
         }
-        else if(data[i] == '}' || data[i] == ')' || data[i] == ']')
+
+        if(data[i] == '}' || data[i] == ')' || data[i] == ']')
         {
             if(stackData.isEmpty())
             {
-                return false;//Stack is empty, no opened brackets
+                return false;//Stack is empty, no opened brackets, example ] or ) or }
             }
+
             if(stackData.getTop() == '(' && data[i] == ')')
             {
-                stackData.pop();
+                stackData.pop(); //()
+                continue;
             }
-            else if(stackData.getTop() == '[' && data[i] == ']')
+
+            if(stackData.getTop() == '[' && data[i] == ']')
             {
-                stackData.pop();
+                stackData.pop();//[]
+                continue;
             }
-            else if(stackData.getTop() == '{' && data[i] == '}')
+
+            if(stackData.getTop() == '{' && data[i] == '}')
             {
-                stackData.pop();
+                stackData.pop();//{}
+                continue;
             }
-            else
-            {
-                return false;//Example [} or (] or etc.. in the stack
-            }
+
+            return false;//Example [} or (] or etc..
         }
     }
     return stackData.isEmpty();
