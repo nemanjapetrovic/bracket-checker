@@ -7,4 +7,4 @@ This is example of algorithm that can be used for checking math expression brack
 	- C++
 	- Code::Blocks
 
-[![N|Solid](http://www.blogworld.com/wp-content/uploads/2009/04/linkedin-logo.jpg)](https://rs.linkedin.com/in/nemanjapetrovic1994)
+[![N|Solid](http://www.prs.uk.com/media/191337/linkedin-logo_small.png?width=250)](https://rs.linkedin.com/in/nemanjapetrovic1994)
