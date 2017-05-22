@@ -4,10 +4,10 @@ This is example of algorithm that can be used for checking math expression brack
 
 ### Example of valid expression
 
-![Imgur](http://i.imgur.com/u9Akh5c.gifv)
+![Imgur](http://i.imgur.com/u9Akh5c.gif)
 
 ### Example of invalid expression
 
-![Imgur](http://i.imgur.com/BPXELZ0.gifv) 
+![Imgur](http://i.imgur.com/BPXELZ0.gif) 
 
 [![N|Solid](http://www.blogworld.com/wp-content/uploads/2009/04/linkedin-logo.jpg)](https://rs.linkedin.com/in/nemanjapetrovic1994)
